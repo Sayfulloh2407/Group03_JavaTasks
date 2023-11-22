@@ -13,6 +13,24 @@ public class Task1 {
 
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+        System.out.println("............................................");
 
+        String div3 = "", div5 = "", div15 = "";
+        for (int i = 1; i <= 100; i++) {
+            if ( i % 15 == 0 && i % 5 == 0 && i % 3 ==0) {
+                div15 +=i + " " ;
+            }
+            if (i % 3 == 0 && i % 15 != 0) {
+                div3 += i +" " ;
+            }
+            if (i % 5 == 0 && i % 15 !=0 ) {
+                div5 += i + " " ;
+            }
+            System.out.println(div3 + " is divisible by 3.");
+            System.out.println(div5 + " is divisible by 5.");
+            System.out.println(div15 + " is divisible by 15.");
+
+
+        }
     }
 }
