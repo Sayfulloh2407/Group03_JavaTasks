@@ -11,8 +11,8 @@ public class Gülnaz_02 {
         b = a - b; // b = 55-20 = 35
         a = a - b; // a = 55-35 = 20
 
-        System.out.println("a = " + a);  // 10
-        System.out.println("b = " + b);  // 20
+        System.out.println("a = " + a);  // 20
+        System.out.println("b = " + b);  // 35
 
 
 
