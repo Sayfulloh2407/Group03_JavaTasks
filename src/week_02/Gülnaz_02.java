@@ -15,7 +15,7 @@ public class Gülnaz_02 {
         System.out.println("b = " + b);  // 35
 
 
-
+        System.out.println("---------------------------------------------------------------------------");
 
         int N = 30;
 
