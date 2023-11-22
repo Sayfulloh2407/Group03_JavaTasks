@@ -14,7 +14,8 @@ public class Task1 {
         System.out.println("a = " + a);
         System.out.println("b = " + b);
         System.out.println("............................................");
-
+    }
+    public static void divison(int n){
         String div3 = "", div5 = "", div15 = "";
         for (int i = 1; i <= 100; i++) {
             if ( i % 15 == 0 && i % 5 == 0 && i % 3 ==0) {
@@ -32,5 +33,29 @@ public class Task1 {
 
 
         }
+        System.out.println("..................................................................");
+
+
+
+    }
+    public static  void printConsecutiveNumbers(int n){
+        for (int i = 1; i <= n; i++) {
+            String result = "";
+            if (i % 2 == 0) {
+                result += "Codility";
+            }
+            if (i % 3 == 0) {
+                result += "Test";
+            }
+            if (i % 5 == 0) {
+                result += "Coders";
+            }
+            if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0) {
+                result += i;
+            }
+            System.out.println(result);
+
+
+
     }
 }
