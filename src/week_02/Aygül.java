@@ -61,6 +61,7 @@ public class Aygül {
         input.close();
 
 
+
         for (int i = 1; i < num1; i++) {
             String result = "";
             if (i%2 ==0 ) {
