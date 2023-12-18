@@ -61,8 +61,8 @@ public class Sayfulloh {
         return result;
     }
     public static void main(String[] args) {
-        System.out.println(FrequencyOfChars("AAABBC"));
-        System.out.println(same("klj", "ljk"));
-        System.out.println(removeDup("AAABBBCCd"));
+        System.out.println(FrequencyOfChars("BBCAAAB"));
+        /*System.out.println(same("klj", "ljk"));
+        System.out.println(removeDup("AAABBBCCd"));*/
     }
 }
