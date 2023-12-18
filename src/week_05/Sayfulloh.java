@@ -13,6 +13,7 @@ public class Sayfulloh {
                 result+=input.charAt(i);
             }
         }
+
         return result;
     }
 
