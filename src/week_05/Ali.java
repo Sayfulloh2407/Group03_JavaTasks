@@ -6,11 +6,12 @@ public class Ali {
         String strForUnique = "AAABBBCCCDEF";
         String strForReverse = "ABCD";
 
-        System.out.println("unique " + strForUnique + " ==> " + uniqueChars(strForUnique));
+        System.out.println("uniques " + strForUnique + " ==> " + charsUniqueOnes(strForUnique));
+        System.out.println("uniques2 " + strForUnique + " ==> " + charsUniqueOnes2(strForUnique));
         System.out.println("Reverse " + strForReverse + " ==> " + reverse(strForReverse));
     }
 
-    public static String uniqueChars(String strA) {  // removes repetition from a string and gives string
+    public static String charsUniqueOnes(String strA) {  // removes repetition from a string and gives string
         String strB = "";
         int aa = strA.length(), b = 0;
 
@@ -42,23 +43,21 @@ public class Ali {
 
         for (int i = str.length() - 1; i >= 0; i--) {   // i : index number of the given string starting from last index to index 0
             reverse += str.charAt(i);              //so that from the given string all characters will be able to added from last to first
-
         }
         return reverse;
     }
 
-    public static String uniqueChars2(String strA) {  // removes repetition from a string and gives string
+    public static String charsUniqueOnes2(String strA) {  // removes repetition from a string and gives string
         String strB = "";
-//        int aa = strA.length(), b=0;
 
         while (strA.length() > 0) {
 
 //            if (!countOccurrences(strA,(strA.charAt(0))==1  ) !=1) {
-            if (!strB.contains(strA.substring(0, 1)) && countOccurrences(strA, (strA.charAt(0))) == 1) {
-                strB += strA.charAt(0);
-                strA = strA.replaceAll(strA.substring(0, 1), "");
+            if (!strB.contains(strA.substring(0, 1)) && countOccurrences(strA, (strA.substring(0,1).charAt(0))) == 1) {
+//                strB += strA.charAt(0);
+                strB += strA.substring(0,1);
             }
-
+            strA = strA.replaceAll(strA.substring(0, 1), "");
         }
         return strB;
     }
