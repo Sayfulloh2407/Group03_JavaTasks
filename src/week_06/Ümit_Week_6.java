@@ -11,7 +11,7 @@ public class Ümit_Week_6 {
         System.out.println("----------------------------------------------------");
 
         int[] example = {8,15,50,1,2,3,4,5};
-        System.out.println(maxNumber(example)); //50
+        System.out.println(maxNumber(example)); //max= 50
 
 
     }
