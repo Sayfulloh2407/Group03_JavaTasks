@@ -59,8 +59,5 @@ String -- Password Validation Task
         4. Password should at least contain one special characters
         5. Password should at least contain a digit
         if all requirements above are met, the method returns true, otherwise returns false
-        Array -- Find Maximum
-        Write a method that can find the maximum number from an int Array
-        String -- sum of digits in a string
-        Write a method that can return the sum of the digits in a string
+
 */
