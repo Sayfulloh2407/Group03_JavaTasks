@@ -44,7 +44,7 @@ public class PasswordValidation1 {
             }
 
         }
-        return matcher.find() && upperOccurs > 0 && lowerOccurs > 0 && spaceOccurs == 0;// Check if the Matcher finds a match
+        return matcher.find() && upperOccurs > 0 && lowerOccurs > 0 && spaceOccurs == 0&& password.length()>=6;// Check if the Matcher finds a match
     }
 
 }
